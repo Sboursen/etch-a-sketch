@@ -1,0 +1,50 @@
+:root {
+    --default-hw: 80vmin;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f111a;
+}
+
+.clear-divs {
+    width: 200px;
+    margin: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10% auto;
+    vertical-align: middle;
+    border-radius: 3%;
+    border-color: black;
+    background-color: gray;
+    box-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    height: var(--default-hw);
+    width: var(--default-hw);
+    border: 10px solid brown;
+    margin: 10px;
+    background-color: black;
+}
+
+.pixel-div {
+    background-color: hsl(240, 20%, 80%);
+    height: 100%;
+    width: 100%;
+}
+
+.pixel-div__hover {
+    background-color: hsl(240, 20%, 80%);
+    transform: scale(1.05);
+}
